@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Senior Software Developer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .left-panel {
+      background-color: #1f1f1f;
+      height: 100vh;
+      padding: 20px;
+    }
+    .left-panel a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 10px 0;
+      display: block;
+    }
+    .left-panel a:hover {
+      color: #ffffff;
+    }
+    .left-panel .social-icons a {
+      margin-right: 10px;
+    }
+    .right-panel {
+      padding: 20px;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+    .right-panel section {
+      margin-bottom: 50px;
+    }
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+    .card {
+      background-color: rgba(31, 31, 31, 0.9);
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.2);
+      border: 1px solid #0d6efd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left Panel -->
+      <div class="col-md-3 left-panel d-flex flex-column align-items-start">
+        <h1 class="fw-bold">John Doe</h1>
+        <h3>Senior Software Engineer</h3>
+        <nav class="mt-4">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+        </nav>
+        <div class="social-icons mt-auto">
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="col-md-9 right-panel smooth-scroll">
+        <!-- About Section -->
+        <section id="about">
+          <h2>About</h2>
+          <p>
+            I am a Senior Software Developer with over 10 years of experience in .NET technologies.  
+            I specialize in building scalable, high-performance applications and have extensive  
+            experience in software design, development, and team leadership. My expertise includes  
+            .NET Core, ASP.NET MVC, Azure, and modern web development frameworks.
+          </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+          <h2>Experience</h2>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Senior Software Engineer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Tech Solutions Inc. (2018 - Present)</h6>
+              <p class="card-text">
+                - Led the development of a cloud-based CRM platform using .NET Core and Azure.<br>
+                - Designed microservices architecture for scalable and maintainable solutions.<br>
+                - Mentored junior developers and conducted code reviews to ensure high-quality deliverables.<br>
+                - Collaborated with cross-functional teams to deliver projects on time and within budget.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Software Developer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Innovatech Systems (2013 - 2018)</h6>
+              <p class="card-text">
+                - Developed and maintained enterprise web applications using ASP.NET MVC and SQL Server.<br>
+                - Implemented RESTful APIs for seamless integration with third-party services.<br>
+                - Worked closely with clients to gather requirements and deliver tailored solutions.<br>
+                - Optimized application performance, reducing load times by 30%.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Project Management Tool</h5>
+              <p class="card-text">
+                - A web-based project management tool built with .NET Core and Angular.<br>
+                - Features include task tracking, team collaboration, and reporting.<br>
+                - Integrated real-time notifications using SignalR for seamless communication.<br>
+                - Deployed the application on Azure with CI/CD pipelines for automated updates.
+              </p>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">E-commerce Platform</h5>
+              <p class="card-text">
+                - Developed a scalable e-commerce platform using ASP.NET MVC and SQL Server.<br>
+                - Integrated payment gateways like PayPal and Stripe for secure transactions.<br>
+                - Implemented advanced search functionality with Elasticsearch.<br>
+                - Achieved a 40% increase in user engagement through performance optimization.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
