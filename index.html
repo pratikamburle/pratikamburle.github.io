@@ -67,7 +67,7 @@
         header {
             background-color: #008080;
             color: #fff;
-            padding: 90px 0;
+            padding: 100px 0 20px 0;
             animation: fadeIn 1s ease-in-out;
         }
 
@@ -100,6 +100,32 @@
           color:  rgb(102, 102, 102);
         }
 
+     /* Add hover animation */
+        .social-icons a {
+          margin: 0 10px;
+          padding: 10px 15px;
+          color: #008080;
+          
+          background-color: #fff;
+          border-radius: 50%;
+          padding: 5px 10px;
+          transition: transform 0.3s, color 0.3s;
+        }
+    
+        .social-icons a:hover {
+          transform: scale(1.2);
+          color: #007bff;
+        }
+        
+     .tooltip-inner {
+            background-color: #fff; /* Change tooltip background color */
+            color: #008080; /* Change tooltip text color */
+        }
+        .tooltip-arrow {
+            border-top-color: #fff; /* Adjust arrow color */
+            border-bottom-color: #fff; /* Adjust arrow color */
+        }
+    
         /* Animations */
         @keyframes fadeIn {
             from {
@@ -143,12 +169,13 @@
         <div class="container">
             <h1>Hi !!! I am Pratik Amburle</h1>
             <h3 class="lead">.Net Full Stack Developer & Lead</h3>
-            <p>
-                <a href="https://github.com/pratikamburle"><i class="fa-brands fa-github"></i></a>
-                <a href="www.linkedin.com/in/pratik-amburle"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:pratik.amburle@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                <a href=""><i class="fa-solid fa-file"></i></a>
-            </p>
+            <br />
+            <h4 class="text-center social-icons">
+                <a class="social-link" data-bs-toggle="tooltip" data-bs-placement="left" title="Mail me !!" href="mailto:pratik.amburle@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a class="social-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Let's connect"  href="www.linkedin.com/in/pratik-amburle"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="social-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub"  alt="GitHub" href="https://github.com/pratikamburle"><i class="fa-brands fa-github"></i></a>
+                <a class="social-link" data-bs-toggle="tooltip" data-bs-placement="right" title="My Resume is here" href=""><i class="fa-solid fa-file"></i></a>
+            </h4>
         </div>
     </header>
 
@@ -342,6 +369,14 @@
             } else {
                 navbar.classList.remove("scrolled");
             }
+        });
+        
+        // Initialize all tooltips
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
         });
     </script>
 
